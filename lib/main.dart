@@ -4,15 +4,26 @@ void main() {
   runApp(MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("My First App"),
+          title: const Text("My First App"),
           centerTitle: true,
+          backgroundColor: Colors.red[600],
         ),
         body: const Center(
-          child: Text("Hello Developers"),
+          child: Text(
+              "Hello Developers",
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.0,
+                color: Colors.grey,
+                fontFamily: "IndieFlower",
+              ),
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () { },
-          child: Text('Click'),
+          backgroundColor: Colors.red[600],
+          child: const Text('Click'),
         ),
       ),
 
